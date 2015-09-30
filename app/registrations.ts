@@ -5,6 +5,10 @@ class RegisterComponents {
 
         new Routes.UIRoutesRegister(application);
 
+        new Controllers.HomeControllerRegister(application);
+        new Controllers.MenuControllerRegister(application);
+        new Controllers.SpassControllerRegister(application);
+
         new Services.IonicConfigServicesRegister(application);
 
         new Framework.EventFactoryRegister(application);

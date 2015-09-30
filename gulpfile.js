@@ -87,6 +87,21 @@ gulp.task('wp8', ['bundlejs', 'bundlecss', 'images'], function () {
         .pipe(gulp.dest(pkg.paths.dest.cordova));
 });
 
+
+/*
+ * Remove *.map, *.js files from the app folder
+ */
+gulp.task('cleanMapJs', function(){
+    return gulp.src([
+        './app/**/*.js',
+        './app/**/*.map'])
+        .pipe(plug.clean({force: true}))
+});
+
+// npm i --save-dev gulp-serve
+//gulp.task('serve', plug.serve()); // will be served at port :3000
+
+
 /*
  * Bundle the JS, CSS, and compress images.
  * Then copy files to production and show a toast.

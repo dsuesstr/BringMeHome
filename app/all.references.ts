@@ -1,6 +1,11 @@
 ///<reference path="../typings/tsd.d.ts"/>
 /// <reference path="interfaces/interface.references.ts" />
 
+/// <reference path="controllers/HomeController.ts" />
+/// <reference path="controllers/MenuController.ts" />
+
+/// <reference path="controllers/SpassController.ts" />
+
 //inject:ts
 /// <reference path="app.ts" />
 /// <reference path="constants.ts" />
